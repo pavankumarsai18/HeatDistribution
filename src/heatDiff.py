@@ -47,7 +47,6 @@ if __name__ == "__main__":
     num_iter = 0
     MAX_ITER = 3000
     while num_iter < MAX_ITER:
-        print(num_iter)
         old_grid = np.copy(grid)
         grid = distribute_heat(old_grid)
         if equals(old_grid, grid):
